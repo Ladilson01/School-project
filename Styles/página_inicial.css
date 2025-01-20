@@ -143,6 +143,12 @@ p {
     padding: 10px;
 }
 @media (max-width: 900px) {
+        .album_link{
+        padding: 2px 30px;
+        border-radius: 8px;
+        margin-left: 10px;
+        margin-right: 80px;
+    }
     .ft{
         height: 280px;
     }
