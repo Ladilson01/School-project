@@ -22,7 +22,7 @@ nav {
     background-color: rgba(172, 67, 67, 0.842);
     display: flex;
     align-items: center;
-    width: 100%;
+    width: auto;
 }
 .navbar, a {
     display: flex;
