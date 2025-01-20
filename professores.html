@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/professores.css">
+    <title>Lista de Professores</title>
+    <link rel="stylesheet" href="Styles/professores.css">
+</head>
+<body>
+    <div data-include="header.html"></div>
+    <div class="container">
+        <header class="Cabeçalho">
+        </header>
+        <div class="top">
+            <div class="filtros-e-pesquisa">
+            <h1 class="h1">Lista de Professores</h1>
+                <div>
+                <input type="text" class="pesquisar" id="Pesquisa" placeholder="Pesquise pelo nome..." onkeyup="searchTeachers()">
+                    <button class="botão" id="botão">Pesquisar</button>
+                </div>
+                <section class="fd">
+                <select id="filtroCurso">
+                    <option value="Todos">Todas disciplinas</option>
+                    <option value="Matemática">Matemática</option>
+                    <option value="Língua Portuguesa">Língua Portuguesa</option>
+                    <option value="TLP">TLP</option>
+                    <option value="Física">Física</option>
+                    <option value="Inglês">Inglês</option>
+                    <option value="TREI">TREI</option>
+                    <option value="FAI">FAI</option>
+                    <option value="PT">PT</option>
+                    <option value="DT">DT</option>
+                    <option value="Ed.Física">Ed.Física</option>
+                    <option value="Empreendedorismo">Empreendedorismo</option>
+                </select>
+                <select id="filtroClasse">
+                    <option value="Todas">Todas as classes</option>
+                    <option value="Sétima">Sétima</option>
+                    <option value="Oitava">Oitava</option>
+                    <option value="Nona">Nona</option>
+                    <option value="Décima">Décima</option>
+                    <option value="Décima Primeira">Décima Primeira</option>
+                    <option value="Décima Segunda">Décima Segunda</option>
+                    <option value="Décima Terceira">Décima Terceira</option>
+                </select>
+                </section>
+            </div>
+        </div>
+        
+        <div id="suggestions" class="suggestions"></div>
+        <div id="teachersList" class="teachers-list"></div>
+        <div class="NomeNãoEncontrado" id="NomeNãoEncontrado" style="display: none; color: #929292; font-weight: bold;">
+            Este nome não foi encontrado.
+        </div>
+    </div>
+    <div data-include="footer.html"></div>
+    <script src="Script/professores.js"></script>
+    <script src="Script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+h2 {
+    margin: 15px;
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.intro {
+    margin: 10px 10px 20px 10px;
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+}
+
+.lista {
+    text-align: justify;
+    background-color: rgba(128, 128, 128, 0.185);
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.imgcurso {
+    height: 200px;
+    width: 200px;
+    margin: 10px -50px 0px 50px;
+}
+
+body {
+    width: auto;
+}
+
+img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+@media (max-width: 400px) {
+    h2{
+        margin: 3px;
+    }
+    .lista {
+        width: 275px;
+        margin: 10px;
+        height: 355px;
+    }
+    .imgcurso {
+        margin:2px 20px;
+        width: 245px;
+        height: 160px;
+    }
+}

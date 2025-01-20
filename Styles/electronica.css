@@ -1,0 +1,23 @@
+.header {
+    background: url('../Images/Electrónica/10_pasos_circuito_electronico2-1000x640.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 65px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+h1,.ta{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.ta{
+    font-size: medium;
+}
+@media(max-width: 900px){
+    .header h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}

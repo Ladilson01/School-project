@@ -1,0 +1,18 @@
+.header {
+    background: url('../Images/M.Industrial/manutencao-preventiva.jpg.webp') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px;
+}
+h1,.ta{
+    color: white;
+}
+h1,.ta{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+@media(max-width: 900px){
+    .header h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}

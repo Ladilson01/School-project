@@ -1,0 +1,127 @@
+.logo {
+    margin-left: 40px;
+    width: 65px;
+    height: 50px;
+    border-radius: 5px;
+}
+.link {
+    padding: 0; /* Remove o padding */
+    background: none; /* Remove o background */
+    margin: 0;
+}
+
+.link:hover {
+    background: none; /* Remove hover indesejado */
+}
+.navbar{
+    margin-left: 0px;
+}
+nav {
+    align-items: start;
+    padding: 10px;
+    background-color: rgba(172, 67, 67, 0.842);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navbar, a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a {
+    color: #fff;
+    padding: 8px 8.93px;
+    border-radius: 10px;
+    margin-right: 40px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(128, 128, 128, 0.541);
+}
+
+.título{
+    margin: 10px 40px;
+    text-shadow: 2px 2px black;
+}
+
+.nav2_conteudo {
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.432);
+    z-index: 1;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 34px;
+    background-color: rgba(128, 128, 128, 0.541);
+
+}
+
+.nav2_conteudo li {
+    list-style: none;
+}
+
+.nav2_conteudo .nav2_a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.nav2_conteudo .nav2_a:hover {
+    background-color: rgba(128, 128, 128, 0.541);
+    color: white;
+}
+
+/* Exibir o dropdown ao passar o mouse */
+.nav2:hover .nav2_conteudo {
+    display: block;
+}
+/* CSS para telas pequenas (celulares) */
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo {
+        margin: 0;
+        width: 85px;
+        height: 70px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .icon, .título, .sobre {
+        display: inline-block;
+        width: auto;
+        color: #fff;
+        font-size: 18px;
+    }
+    nav a {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+@media(max-width:400px){
+    .título{
+        margin: 8px 0;
+    }
+}

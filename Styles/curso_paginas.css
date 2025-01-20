@@ -1,0 +1,112 @@
+.about-course, .benefits, .testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.benefit-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.benefit-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.benefit-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.testimonial {
+    display: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    height: 100px;
+}
+
+.testimonial.active {
+    display: block;
+}
+.ta{
+    text-align: center;
+}
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.ta1{
+    color: black;
+}
+.slider-controls .prev, .slider-controls .next {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ff6600;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin: 15px 0;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+}
+
+p {
+    text-indent: 15px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.Imagem {
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+}
+
+@media(max-width: 650px) {
+    .Imagem {
+        width: 100%;
+        height: auto;
+        margin: 15px auto;
+    }
+    p {
+        margin: 0 15px;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin: 12px 0;
+    }
+}
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

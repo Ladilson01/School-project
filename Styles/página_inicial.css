@@ -1,0 +1,194 @@
+.ft{
+    background-image: url(../Images/Foto\ da\ escola.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.welcome{
+    color: white;
+    text-shadow: 5px 5px black;
+    font-size: 70px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    flex-direction: row;
+}
+body {
+    background-color: #f4f4f9;
+}
+.section1 {
+    margin: 20px auto;
+    margin-top: 0;
+    max-width:95%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.foto{
+    width: 48%; height: 60vh;border-radius: 8px; float: right;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album_link{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 108px;
+    margin-right: 180px;
+}
+.h20 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+    margin-top: 430px;
+}
+h3{
+    color: #2c3e50;
+}
+p {
+    text-indent: 15px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+/* Slideshow */
+.slideshow {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.377);
+    overflow: hidden;
+    border-radius: 8px;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: left 0.5s ease-in-out;
+}
+.slide.ativo {
+    left: 0;
+}
+.texto-slide {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.texto-slide h2 {
+    margin: 0 0 10px;
+}
+
+.btn-prev,
+.btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.missão,h2{
+    margin: 20px;
+    text-align: center;
+}
+.extra{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.info{
+    padding: 20px 15px;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.185);
+    margin: 15px;
+    width: auto;
+    flex: 1;
+}
+.info h3{
+    padding: 10px;
+}
+@media (max-width: 900px) {
+    .ft{
+        height: 280px;
+    }
+    .foto{
+    flex-direction: column;
+    float: none;
+    width: 100%; height: 40vh
+
+    }
+    .slideshow{
+    height: 40vh;
+    margin-bottom: 20px;
+    width: 100%;
+    float: none;
+    }
+    .h20 {
+        margin-top: 0px;
+    }
+    .texto-slide{
+        padding: 5px;
+    }
+    .btn-prev,
+    .btn-next{
+        font-size: 2rem;
+        padding: 0rem 0.5rem;
+        border-radius: 4px;
+    }
+    .welcome{
+        text-shadow: 3px 3px black;
+
+            font-size: 35px;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 35%;
+    }
+    .extra ,.info{
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .welcome{
+        font-size: 35px;
+        width: 300px;
+        position: absolute;
+        left: 50%;
+        top: 35%;
+    }
+}

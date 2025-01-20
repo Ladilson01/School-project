@@ -1,0 +1,21 @@
+.header {
+    background: url('../Images/Informática/sadi.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 90px;
+}
+h1,.ta{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.ta{
+    font-size: medium;
+}
+.ta1{
+    color: black;
+}
+@media(max-width: 900px){
+    .header h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}

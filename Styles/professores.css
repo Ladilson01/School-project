@@ -1,0 +1,130 @@
+.Cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.h1 {
+    font-size: 38px;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtros-e-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos */
+}
+
+#Pesquisa {
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 10px;
+}
+
+.botão {
+    padding: 7px;
+    border-radius: 5px;
+    border: solid 1px rgb(185, 181, 181);
+    cursor: pointer;
+}
+
+#filtroCurso, #filtroClasse {
+    padding: 2px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px; /* Tamanho fixo para consistência */
+}
+.NomeNãoEncontrado{
+    text-align: center;
+    margin-top: 80px;
+    height: 300px;
+    color: black;
+}
+.teachers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+    transition: 2ms;
+}
+
+.teacher {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.teacher img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 2px rgb(185, 181, 181);
+}
+
+.teacher-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+@media(max-width:900px){
+    .h1{
+        margin-top: 15px;
+    }
+    .filtros-e-pesquisa {
+
+        flex-direction: column;
+    }
+    .Cabeçalho{
+        display: block;        
+    }
+    #Pesquisa {
+        width: 320px;
+        padding: 7px;
+        margin-left: 20%;
+    }
+    .teacher {
+        margin-bottom: 20px;
+    }
+#filtroCurso, #filtroClasse {
+        margin: 15px;
+}
+@media(max-width:620px){
+    #Pesquisa {
+        margin-left: 0;
+    }
+}
+@media(max-width:450px){
+    #Pesquisa {
+        width: 240px;
+        margin-left: 5px;
+    }
+    .teacher {
+        width: 155px;
+    }
+    .suggestions {
+        position: absolute;
+        left: 10px;
+    }
+    .teacher img {
+        width: 130px;
+        height: 130px;
+    }
+}
+}
+.teacher a img:hover{
+    transform: scale(1.05);
+}

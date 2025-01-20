@@ -1,0 +1,70 @@
+.header {
+    background: url('../Images/Escola/FB_IMG_17310679025554800.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 200px;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+video{
+    border-radius: 15px;
+    width: 450px;
+    height: 300px;
+}
+h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin: 15px 0;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+}
+
+p {
+    text-indent: 15px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.Imagem {
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+}
+
+@media(max-width: 650px) {
+    .Imagem {
+        width: 100%;
+        height: auto;
+        margin: 15px auto;
+    }
+    p {
+        margin: 0 15px;
+    }
+    video{
+        width: 325px;
+    }
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

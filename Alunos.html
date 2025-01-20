@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/curso_paginas.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <title>Alunos</title>
+    <style>
+        section{
+            max-width: 1000px;
+        }
+        img{
+            width: 600px;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+        }
+        @media(max-width: 900px){
+            .alunos{
+                width: 400px;
+            }
+            section{
+            max-width: 800px;
+            }
+        }
+        .icon_pdf{
+            width: 70px;
+            height: 70px;
+        }
+        .icon_pdf:hover{
+            transform: scale(1.05);
+        }
+        .last{
+            display: flex;
+            justify-content: center;
+        }
+        .div{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.185);
+            padding: 4px;
+            width: 300px;
+            border-radius: 8px;
+        }
+        .a{
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div data-include="header.html"></div>
+    <section>
+        <h2>Direitos dos Alunos</h2>
+        <div class="img">
+        <img class="alunos" src="Images/Alunos/college project-rafiki.png" alt="">
+        </div>
+        <p>
+            Para além do direito a participação na vida da escola, do direito a educação e a uma justa e efectiva igualdade de oportunidades, no acesso e sucesso escolar, o aluno tem seus direitos como também está submetido a determinadas normas da escola. Para mais informações baixe o arquivo em PDF.
+        </p>
+        <div class="last">
+            <div class="div">
+                <a href="PT.pdf" download=""><img class="icon_pdf" src="Images/icon/InShot_20250119_183314422.png" alt=""></a>
+                <a class="a" href="PT.pdf" download=""><p><strong>Regulamentos da escola</strong></p></a>
+            </div>
+        </div>
+    </section>
+        <div data-include="footer.html"></div>
+        <script src="Script/script.js"></script>
+</body>
+</html>

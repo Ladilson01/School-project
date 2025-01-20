@@ -1,0 +1,20 @@
+.header {
+    background: url('../Images/Desenhador Projectista/Desenhador Projectista.png') no-repeat center center/cover;
+    text-align: center;
+    padding: 50px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+.icons{
+    width: 20px;
+    height: 20px;
+}
+@media(max-width: 900px){
+    .header h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}

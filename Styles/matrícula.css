@@ -1,0 +1,25 @@
+.matrícula {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    color: #1b4d6a;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.p{
+    text-align: center;
+}
+.matrícula:hover {
+    color: #fff;
+    background-color: #1b4d6a;
+}
+.info:hover, .matrícula:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}

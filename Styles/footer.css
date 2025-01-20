@@ -1,0 +1,17 @@
+footer{
+    background-color:  rgba(129, 34, 34, 0.842);
+    text-align: center;
+    height: 90px;
+    padding-top: 20px;
+    color: white;
+}
+footer ul, li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+.f{
+    text-decoration: none;
+    margin-top: 10px;
+}
